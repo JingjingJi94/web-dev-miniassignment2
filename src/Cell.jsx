@@ -1,15 +1,20 @@
-import { useState } from 'react'
+import { useState,useContext } from 'react'
+import { GridContext } from './Grid'
 import './Cell.css'
 
-export default function Cell({ updateGrid }) {
+export default function Cell() {
     //useState to track status of cell on/off
     const [isOn, setIsOn] = useState(false)
+
+    //retrieves function in provider, only works if a provider in the parent component render
+    const {updateCount} = useContext(GridContext)
 
     function UpdateCellOnClick() {
         //update isOn state variable
         setIsOn(!isOn);
-        //trigger update function in parent(Grid)
-        updateGrid(!isOn);
+
+        // update count in grid
+        updateCount(!isOn);
     }
 
     return (

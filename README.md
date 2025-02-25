@@ -1,8 +1,5 @@
-# React + Vite
+# Mini Assignment 2: React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ! Note to marker (Extra Point)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Context** is used to handle all the data-accessing in this assignment as requried for extra points. 
